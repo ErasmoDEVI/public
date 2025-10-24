@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Admin - SaaS Barbearia</title><link rel="stylesheet" href="/styles.css"/></head>
+<body>
+  <div class="header"><div class="brand"><h1>Painel Admin</h1></div></div>
+  <main class="page card">
+    <h2>Login</h2>
+    <input id="username" placeholder="Usuário" value="admin"/>
+    <input id="password" placeholder="Senha" type="password" value="admin123"/>
+    <div class="actions">
+      <button class="btn btn-primary" id="loginBtn">Entrar</button>
+    </div>
+    <div id="msg" class="muted"></div>
+    <div id="panel" class="hidden">
+      <h3>Agendamentos</h3>
+      <div id="bookings"></div>
+    </div>
+  </main>
+  <script src="/admin_front.js"></script>
+</body>
+</html>

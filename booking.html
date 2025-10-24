@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Agendar - SaaS Barbearia</title><link rel="stylesheet" href="/styles.css"/></head>
+<body>
+  <header class="header"><div class="brand" onclick="window.location='/'"><h1>SaaS Barbearia</h1><small>Agendamentos</small></div></header>
+  <main class="page">
+    <div class="card">
+      <button class="link" onclick="window.location='/'">← Voltar</button>
+      <h2 id="barberName">Agendar</h2>
+      <div id="services" class="services-list"></div>
+      <hr/>
+      <h3>Seus dados</h3>
+      <input id="clientName" placeholder="Seu nome"/>
+      <input id="clientPhone" placeholder="Telefone (ex: +5511999999999)"/>
+      <h3>Data</h3>
+      <input id="dateInput" type="date"/>
+      <div id="slots" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px"></div>
+      <div class="actions"><button class="btn btn-primary" id="bookBtn">Confirmar e enviar WhatsApp</button></div>
+      <p id="msg" class="muted"></p>
+    </div>
+  </main>
+  <script src="/booking_front.js"></script>
+</body>
+</html>
